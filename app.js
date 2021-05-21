@@ -1,10 +1,16 @@
+let div = document.querySelector("div");
+let btn = document.querySelector("button");
+let input = document.querySelector("#num");
+let num = Number(input.value);
 
-let div = document.querySelector("div")
-
-
-for(let i = 0; i< 6; i++){
-    document.write("<br>")
-    for(let j = 0; j<= i ; j++){
-        document.write("<span>*</span>")
+btn.addEventListener("click", (e) => {
+  for (let i = 0; i < num; i++) {
+    let br = document.createElement("br");
+    div.append(br);
+    for (let j = 0; j <= i; j++) {
+      let span = document.createElement("span");
+      span.innerHTML = "*";
+      div.append(span);
     }
-}
+  }
+});
