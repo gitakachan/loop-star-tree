@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  background-color: rgb(22, 22, 21);
+  color: #fff;
+  text-align: center;
+}
+
+span {
+  color: yellow;
+}
