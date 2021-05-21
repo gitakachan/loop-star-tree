@@ -1,9 +1,10 @@
 let div = document.querySelector("div");
-let btn = document.querySelector("button");
-let input = document.querySelector("#num");
-let num = Number(input.value);
+let createBtn = document.querySelector("#create");
+let clearBtn = document.querySelector("#clear");
 
-btn.addEventListener("click", (e) => {
+createBtn.addEventListener("click", (e) => {
+  let input = document.querySelector("#num");
+  let num = Number(input.value);
   for (let i = 0; i < num; i++) {
     let br = document.createElement("br");
     div.append(br);
@@ -13,4 +14,8 @@ btn.addEventListener("click", (e) => {
       div.append(span);
     }
   }
+});
+
+clearBtn.addEventListener("click", () => {
+  div.innerHTML = "";
 });
